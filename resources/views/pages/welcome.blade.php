@@ -28,8 +28,8 @@
             <a style="margin-top: 2px;" href="{{ route('blog.single', $post->slug)}}">{{ $post->comment()->count() }} Comments</a>
             </div>
             <div class="likes">
-                <a class="like" style="float:right; margin-top: 2px; margin-right:10px; font-size: 14px; " href="">{{ Auth::user()->likes()->where('post_id', $post->id)->first() ? Auth::user()->likes()->where('post_id', $post->id)->first()->like == 1 ? 'You liked this post' : 'Like' : 'Like'}}</a> |
-                <a class="like" style="float:right; margin-top: 2px; margin-right:10px; font-size: 14px; " href="">{{ Auth::user()->likes()->where('post_id', $post->id)->first() ? Auth::user()->likes()->where('post_id', $post->id)->first()->like == 0 ? 'You don\'t like this post' : 'Dislike' : 'Dislike'}}</a>
+                <a class="like" style="float:right; margin-top: 2px; margin-right:10px; font-size: 14px; " href="">Like</a> |
+                <a class="like" style="float:right; margin-top: 2px; margin-right:10px; font-size: 14px; " href="">Dislike</a>
             </div>
             </div>
             </div>
